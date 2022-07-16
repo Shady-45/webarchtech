@@ -2,14 +2,14 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="lg:h-[110vh] sm:bg-black md:text-white sm:text-white lg:text-white lg:w-[100%] md:bg-black  lg:bg-black">
+    <div className=" bg-black text-white  lg:h-[110vh] sm:bg-black md:text-white sm:text-white lg:text-white lg:w-[100%] md:bg-black md:w-[100%]  lg:bg-black">
       <div className="footer-first text-center  ">
         <img
-          className="sm:h-[15rem] sm:m-auto lg:h-40  md:h-40 md:m-auto lg:m-auto"
+          className=" h-[15rem] pl-[10rem]     sm:h-[15rem] sm:ml-[2em] sm:m-auto lg:h-40  md:h-40 md:m-auto lg:m-auto"
           src="/footer-img.png"
           alt=""
         />
-        <h1 className="  sm:text-4xl sm:font-semibold sm:pt-[3rem] sm:pb-[3rem]  md:text-4xl md:font-semibold md:pt-[3rem] md:pb-[3rem]    lg:text-4xl lg:font-semibold lg:pt-[3rem] lg:pb-[3rem]">
+        <h1 className=" pt-[4rem] sm:text-4xl sm:font-semibold sm:pt-[3rem] sm:pb-[3rem]  md:text-4xl md:font-semibold md:pt-[3rem] md:pb-[3rem]    lg:text-4xl lg:font-semibold lg:pt-[9rem] lg:pb-[3rem]">
           Sounds Good?
         </h1>
         <p className=" sm:text-2xl sm:font-normal sm:w-[74%] sm:m-auto sm:px-1  md:text-2xl md:font-normal md:w-[74%] md:m-auto md:px-1 lg:text-2xl lg:font-normal lg:w-[44%] lg:m-auto lg:px-1">
@@ -17,15 +17,19 @@ const Footer = () => {
           lingering questions, right here, right now.
         </p>
       </div>
-      <div className="btn sm:ml-[12rem] sm:pt-[3rem] md:flex md:w-[100%] md:justify-center md:gap-[5.5rem] md:mt-[3rem] lg:flex lg:w-[100%] lg:justify-center lg:m-auto lg:gap-[5.5rem] lg:mt-[3rem]">
-        <button className=" sm:hover:bg-white sm:p-[1em] sm:text-white sm:font-semibold sm:hover:text-black sm:border sm:border-white sm:hover:border-transparent sm:rounded-[2em] md:hover:bg-white md:p-[1em] md:text-white md:font-semibold md:hover:text-black md:border md:border-white md:hover:border-transparent md:rounded-[2em]  lg:hover:bg-white lg:p-[1em] lg:text-white lg:font-semibold lg:hover:text-black  lg:border lg:border-white lg:hover:border-transparent lg:rounded-[2em] ">
+      <div className="pl-[10rem]  pt-[2rem] pb-[4rem]  btn sm:ml-[2em] sm:pt-[3rem] md:flex md:w-[100%] md:justify-center md:gap-[5.5rem] md:mt-[3rem] lg:flex lg:w-[100%] lg:justify-center lg:m-auto lg:gap-[5.5rem] lg:pr-[10rem] lg:pt-[1rem] lg:mt-[3rem]">
+        <button className="hover:bg-white p-[1em] text-white font-semibold hover:text-black border border-white hover:border-transparent rounded-[2em] sm:hover:bg-white sm:p-[1em] sm:text-white sm:font-semibold sm:hover:text-black sm:border sm:border-white sm:hover:border-transparent sm:rounded-[2em] md:hover:bg-white md:p-[1em] md:text-white md:font-semibold md:hover:text-black md:border md:border-white md:hover:border-transparent md:rounded-[2em]  lg:hover:bg-white lg:p-[1em] lg:text-white lg:font-semibold lg:hover:text-black  lg:border lg:border-white lg:hover:border-transparent lg:rounded-[2em] ">
           How we hire
         </button>
-        <button className="  sm:hover:bg-white sm:p-[1em] sm:text-white sm:font-semibold sm:hover:text-black sm:border sm:border-white sm:hover:border-transparent sm:rounded-[2em]   md:hover:bg-white md:p-[1em] md:text-white md:font-semibold md:hover:text-black md:border md:border-white md:hover:border-transparent md:rounded-[2em]  lg:hover:bg-white  lg:text-white lg:font-semibold lg:hover:text-black lg:p-[1em] lg:border lg:border-white lg:hover:border-transparent lg:rounded-[2em]">
+        <button className=" hover:bg-white p-[1em] text-white font-semibold hover:text-black border border-white hover:border-transparent rounded-[2em]  sm:hover:bg-white sm:p-[1em] sm:text-white sm:font-semibold sm:hover:text-black sm:border sm:border-white sm:hover:border-transparent sm:rounded-[2em]   md:hover:bg-white md:p-[1em] md:text-white md:font-semibold md:hover:text-black md:border md:border-white md:hover:border-transparent md:rounded-[2em]  lg:hover:bg-white  lg:text-white lg:font-semibold lg:hover:text-black lg:p-[1em] lg:border lg:border-white lg:hover:border-transparent lg:rounded-[2em]">
           Read our FAQ
         </button>
       </div>
-      <div className="footer-content lg:flex hidden lg:cursor-pointer    lg:ml-[5rem] lg:gap-64 lg:bg-black">
+      <div
+        className="footer-content lg:flex hidden lg:ml-[-10rem] lg:cursor-pointer md:bg-black     gap: 10em;
+    lg:m-auto lg:pl-[25em] lg:gap-[10em]
+    padding-left: 16em;    lg:gap-9rem lg:bg-black"
+      >
         <div className="footer-content-1 lg:mt-[4rem]">
           <ul>
             <li>
