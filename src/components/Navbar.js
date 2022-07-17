@@ -1,27 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Navbar = () => {
+  let [open, setOpen] = useState(false);
   return (
-    <div className="lg:bg-[rgba(243, 240, 250, 0.8)]">
-      <nav className="lg:flex  lg:mt-[2rem] lg:ml-[2rem] lg:text-2xl">
-        <div className="title">
-          <div className="lg:first lg:flex lg:flex-row">
-            <p className="lg:font-extrabold">WEB</p>
-            <p className="lg:h-2 lg:w-2 lg:mt-5  lg:bg-green-500 lg:border-solid lg:border-green-500 lg:rounded-2xl"></p>
-          </div>
-          <div className="second">
-            <p className="lg:font-bold lg:text-[16px] lg:mt-[-16px] lg:ml-[2px]">
-              ARCH
-            </p>
+    <div className=" w-full fixed top-0 left-0">
+      <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
+        <div
+          className="font-bold text-2xl cursor-pointer flex items-center  
+    text-gray-800"
+        >
+          <div className="title flex flex-col">
+            <div className="first-part flex ">
+              <h1 className="text-2xl flex  font-bold">WEB</h1>
+              <p className="h-2 w-2 mt-5  bg-green-500 border-solid border-green-500 rounded-2xl"></p>
+            </div>
+            <div className="second-part">
+              <h1 className="text-sm mt-[-11px]  ml-[11px] font-bold">ARCH</h1>
+            </div>
           </div>
         </div>
-        <ul className=" lg:flex lg:w-[80%] lg:justify-end lg:gap-[5.75rem] lg:font-semibold">
-          <li>about</li>
-          <li>works</li>
-          <li>pricing</li>
-          <li>contact</li>
+
+        <div
+          onClick={() => setOpen(!open)}
+          className="text-3xl absolute right-8 top-5 cursor-pointer  md:hidden"
+        >
+          <ion-icon name={open ? "close" : "menu"}></ion-icon>
+        </div>
+
+        <ul
+          className={`md:flex md:text-center  md:items-center md:pb-0 pb-12 absolute md:static  md:z-auto z-[-1] left-0 w-full  md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in  ${
+            open ? "top-20 " : "top-[-490px]"
+          }`}
+        >
+          <li className="md:ml-8  font-serif  text-xl hover:shadow-md hover:rounded-full hover:p-3 hover:transition hover:ease-in hover:duration-500 md:my-0 my-7">
+            about
+          </li>
+          <li className="md:ml-8 font-serif  text-xl  hover:shadow-md hover:rounded-full hover:p-3 md:my-0 my-7">
+            works
+          </li>
+          <li className="md:ml-8 font-serif  text-xl hover:shadow-md hover:rounded-full hover:p-3 md:my-0 my-7">
+            pricing
+          </li>
+          <li className="md:ml-8  font-serif text-xl hover:shadow-md hover:rounded-full hover:p-3 md:my-0 my-7">
+            contact
+          </li>
         </ul>
-      </nav>
+      </div>
     </div>
   );
 };
